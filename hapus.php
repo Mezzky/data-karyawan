@@ -2,8 +2,6 @@
 require 'config.php';
 
 $id = $_GET["id"];
-
-
     if( hapus($id) > 0 ) {
     echo "
         <script>
@@ -19,7 +17,4 @@ $id = $_GET["id"];
         </script>
         ";
     }
-
-
-
 ?>
