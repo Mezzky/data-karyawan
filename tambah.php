@@ -39,19 +39,19 @@ if( isset($_POST["submit"]) ) {
             <td>Tambah Karyawan</td>
         </tr>
         <tr>
-            <td><label for="username">Nama </label></td>
+            <td><label for="username">Nama</label></td>
             <td>:</td>
-            <td><input type="text" name="username" id="username" required="return confirm('Ini harus diisi');"><td>
+            <td><input type="text" name="username" id="username"><td>
         </tr>
         <tr>
-            <td><label for="umur">Umur </label></td>
+            <td><label for="umur">Umur</label></td>
             <td>:</td>
-            <td><input type="text" name="umur" id="umur" required="return confirm('Ini harus diisi');"><td>
+            <td><input type="text" name="umur" id="umur"><td>
         </tr>
         <tr>
-            <td><label for="pekerjaan">Pekerjaan </label></td>
+            <td><label for="pekerjaan">Pekerjaan</label></td>
             <td>:</td>
-            <td><input type="text" name="pekerjaan" id="pekerjaan" required="return confirm('Ini harus diisi');"><td>
+            <td><input type="text" name="pekerjaan" id="pekerjaan"><td>
         </tr>
         <tr>
             <td><button type="submit" name="submit">Tambah!</button></td>

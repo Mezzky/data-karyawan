@@ -12,37 +12,39 @@ $karyawan = query("SELECT * FROM karyawan");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karyawan</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/3075c43df2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Makodevz</h1>
+    <header>
+        <h1>Makodevz</h1>
+    </header>
 
-<a href="tambah.php">Tambah Karyawan</a>
+<div class="container">
+        <a class="tambah" href="tambah.php">Tambah Karyawan <i class="fas fa-plus-circle"></i></a>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Nama Karyawan</th>
+                <th>Umur</th>
+                <th>Pekerjaan</th>
+                <th>Aksi</th>
+            </tr>
 
-
-    <br><br>
-
-    <table border="1" cellpadding="5" cellspacing="0">
-        <tr>
-            <th>No.</th>
-            <th>Nama Karyawan</th>
-            <th>Umur</th>
-            <th>Pekerjaan</th>
-            <th>Aksi</th>
-        </tr>
-
-        <?php $i = 1; ?>
-        <?php foreach( $karyawan as $kyn ) : ?>
-        <tr>
-            <td><?= $i; ?></td>
-            <td><?= $kyn["nama"]; ?></td>
-            <td><?= $kyn["umur"]; ?></td>
-            <td><?= $kyn["pekerjaan"]; ?></td>
-            <td>
-                <a href="hapus.php?id=<?= $kyn["id"]; ?>" onclick="return confirm('Yakin Ingin Dipecat?')">Pecat</a> 
-            </td>
-        </tr>
-        <?php $i++; ?>
-        <?php endforeach; ?>
-    </table>
+            <?php $i = 1; ?>
+            <?php foreach( $karyawan as $kyn ) : ?>
+            <tr>
+                <td class="nomer"><?= $i; ?></td>
+                <td class="nama"><?= $kyn["nama"]; ?></td>
+                <td class="umur"><?= $kyn["umur"]; ?></td>
+                <td class="kerja"><?= $kyn["pekerjaan"]; ?></td>
+                <td class="hapus">
+                    <a class="pecat" href="hapus.php?id=<?= $kyn["id"]; ?>" onclick="return confirm('Yakin Ingin Dipecat?')">Pecat <i class="fas fa-minus-square"></i></a> 
+                </td>
+            </tr>
+            <?php $i++; ?>
+            <?php endforeach; ?>
+        </table>
+    </div>
 </body>
 </html>

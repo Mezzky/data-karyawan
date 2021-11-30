@@ -1,0 +1,106 @@
+body,
+html{
+    background-color: rgb(134, 136, 240);
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+header h1{
+    margin: 20px auto 0;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(248, 182, 96);
+    color: #ffffff;
+    width: min-content;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+
+.container{
+    margin: auto;
+    /* background-color: #fff; */
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .tambah{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(61, 233, 45);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0px 5px 2px rgba(0,0,0,.5);
+    transition: 300ms;
+}
+.container .tambah:hover{
+    box-shadow: none;
+    transform: translateY(3px);
+    background-color: rgb(98, 243, 85);
+}
+
+.container table{
+    width: 90%;
+    border-radius: 10px;
+    /* color: #fff; */
+}
+.container td,tr,th{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.container table .nomer{
+    text-align: center;
+    background-color: rgb(255, 232, 127);
+}
+
+.container table .hapus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgb(253, 65, 65);
+    padding: 3px;
+    border-radius: 5px;
+    transition: 100ms;
+}
+.container table .hapus:hover{
+    background-color: rgb(255, 106, 106);
+}
+.container table .hapus:hover .pecat{
+    color: rgb(255, 236, 236);
+}
+
+.container table .hapus .pecat{
+    color: #fff;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+table th{
+    background-color: rgb(10, 169, 243);
+    color: #fff;
+}
+
+table .nama{
+    background-color: rgb(179, 255, 64);
+    /* color: #fff; */
+}
+
+table .umur{
+    background-color: rgb(253, 108, 222);
+    text-align: center;
+    color: #fff;
+}
+
+table .kerja{
+    background-color: rgb(107, 255, 248);
+    /* color: #fff; */
+}
