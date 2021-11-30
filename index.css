@@ -20,7 +20,6 @@ header h1{
 
 .container{
     margin: auto;
-    /* background-color: #fff; */
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -49,7 +48,7 @@ header h1{
 .container table{
     width: 90%;
     border-radius: 10px;
-    /* color: #fff; */
+    
 }
 .container td,tr,th{
     border: 2px solid rgb(0, 0, 0);
@@ -91,7 +90,7 @@ table th{
 
 table .nama{
     background-color: rgb(179, 255, 64);
-    /* color: #fff; */
+    
 }
 
 table .umur{
@@ -102,5 +101,5 @@ table .umur{
 
 table .kerja{
     background-color: rgb(107, 255, 248);
-    /* color: #fff; */
+    
 }
