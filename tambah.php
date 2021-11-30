@@ -1,17 +1,17 @@
-<?php 
+<?php
 require 'config.php';
 
-if( isset($_POST["submit"]) ) {
+if (isset($_POST["submit"])) {
 
-    if( tambah($_POST) > 0 ) {
-    echo "
+    if (tambah($_POST) > 0) {
+        echo "
         <script>
             alert('Berhasil Menambah Karyawan!');
             document.location.href = 'index.php';
         </script>
         ";
     } else {
-    echo "
+        echo "
         <script>
             alert('Gagal Menambah Karyawan!');
             document.location.href = 'index.php';
@@ -24,39 +24,31 @@ if( isset($_POST["submit"]) ) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Karyawan</title>
+    <link rel="stylesheet" href="tambah.css">
 </head>
-<body>
-    <h1>Tambah Karyawan Makodevz</h1>
 
-<form action="" method="POST">
-    <table border="1" cellpadding="3" cellspacing="3">
-        <tr>
-            <td>Tambah Karyawan</td>
-        </tr>
-        <tr>
-            <td><label for="username">Nama</label></td>
-            <td>:</td>
-            <td><input type="text" name="username" id="username"><td>
-        </tr>
-        <tr>
-            <td><label for="umur">Umur</label></td>
-            <td>:</td>
-            <td><input type="text" name="umur" id="umur"><td>
-        </tr>
-        <tr>
-            <td><label for="pekerjaan">Pekerjaan</label></td>
-            <td>:</td>
-            <td><input type="text" name="pekerjaan" id="pekerjaan"><td>
-        </tr>
-        <tr>
-            <td><button type="submit" name="submit">Tambah!</button></td>
-        </tr>
-    </table>
-</form>
+<body>
+    <section class="container">
+        <header>Tambah Karyawan Makodevz</header>
+        <form action="" method="POST">
+            <!-- <label for="username">Nama</label> -->
+            <input type="text" placeholder="Nama" name="username" id="username">
+
+            <!-- <label for="umur">Umur</label> -->
+            <input type="text" placeholder="Umur" name="umur" id="umur">
+
+            <!-- <label for="pekerjaan">Pekerjaan</label> -->
+            <input type="text" placeholder="Pekerjaan" name="pekerjaan" id="pekerjaan">
+            <div class="kosong"></div>
+            <button class="tambah" type="submit" name="submit">Tambah!</button>
+        </form>
+    </section>
 </body>
+
 </html>

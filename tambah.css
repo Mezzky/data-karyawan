@@ -1,0 +1,52 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: coral;
+}
+
+.container{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(140, 255, 95);
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 30px 30px 0 40px;
+    gap: 10px;
+}
+
+.container header{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(119, 241, 243);
+    color: #fff;
+}
+
+.container form .tambah{
+    display: block;
+    background-color: rgb(28, 182, 28);
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 5px 2px rgba(0,0,0,.5);
+    transition: 300ms;
+}
+.container form .tambah:hover{
+    background-color: rgb(127, 224, 127);
+    box-shadow: none;
+    transform: translateY(3px);
+}
