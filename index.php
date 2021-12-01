@@ -39,7 +39,8 @@ $karyawan = query("SELECT * FROM karyawan");
                 <td class="umur"><?= $kyn["umur"]; ?></td>
                 <td class="kerja"><?= $kyn["pekerjaan"]; ?></td>
                 <td class="hapus">
-                    <a class="pecat" href="hapus.php?id=<?= $kyn["id"]; ?>" onclick="return confirm('Yakin Ingin Dipecat?')">Pecat <i class="fas fa-minus-square"></i></a> 
+                    <a class="pecat" href="hapus.php?id=<?= $kyn["id"]; ?>" onclick="return confirm('Yakin Ingin Dipecat?')">Pecat <i class="fas fa-minus-square"></i></a> |
+                    <a class="pecat" href="ubah.php?id=<?= $kyn["id"]; ?>">Usir <i class="fas fa-minus-square"></i></a>
                 </td>
             </tr>
             <?php $i++; ?>
