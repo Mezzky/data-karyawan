@@ -33,7 +33,7 @@ function hapus($id) {
 }
 
 
-function tambah($data) {
+function ubah($data) {
     global $conn;
     $id = $data["id"];
     $nama = htmlspecialchars($data["username"]);
