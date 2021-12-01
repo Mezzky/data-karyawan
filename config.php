@@ -31,4 +31,23 @@ function hapus($id) {
 
     return mysqli_affected_rows($conn);
 }
+
+
+function tambah($data) {
+    global $conn;
+    $id = $data["id"];
+    $nama = htmlspecialchars($data["username"]);
+    $umur = htmlspecialchars($data["umur"]);
+    $pekerjaan = htmlspecialchars($data["pekerjaan"]);
+
+    $query = "UPDATE karyawan SET
+                nama = '$nama',
+                umur = '$umur',
+                pekerjaan = '$pekerjaan'
+                WHERE id = $id
+                ";
+    mysqli_query($conn, $query);
+
+    return mysqli_affected_rows($conn);
+}
 ?>
