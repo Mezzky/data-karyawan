@@ -3,6 +3,10 @@ require 'config.php';
 
 $karyawan = query("SELECT * FROM karyawan");
 
+if( isset($_POST["cari"]) ) {
+    $karyawan = cari($_POST["keyword"]);
+}
+
 
 ?>
 <!DOCTYPE html>
@@ -18,10 +22,16 @@ $karyawan = query("SELECT * FROM karyawan");
 <body>
     <header>
         <h1>Makodevz</h1>
+
     </header>
 
 <div class="container">
         <a class="tambah" href="tambah.php">Tambah Karyawan <i class="fas fa-plus-circle"></i></a>
+    <form action="" method="POST">
+        <input type="text" name="keyword" size="30" autofocus placeholder="Search.." autocomplete="off">
+        <button type="submit" name="cari">Search!</button>
+    </form>
+    <br><br>
         <table>
             <tr>
                 <th>No.</th>
